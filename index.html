@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h1 class="titulo" id="catchError">Conversor de monedas nacional</h1>
+    <div class="contenedor">
+        <h2>PESOS CLP</h2>
+        <input type="text" id="monto">
+        <p>Moneda a convertir: </p>
+        <select name="select" id="moneda">
+            <option selected disabled>Seleccione moneda</option>
+            <option value="dolar">Dolar</option>
+            <option value="uf">UF</option>
+            <option value="euro">Euro</option>
+            <option value="bitcoin">Bitcoin</option>
+        </select>
+        <button id="buscar">Buscar</button>
+        <h4 id="resultado">...</h4>
+    </div>
+    <div class="grafico">
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+<script src="./assets/js/index.js"></script>
+</html>
